@@ -22,3 +22,101 @@ body {
 	line-height: 1.6;
 }
 
+h1,
+h2,
+li {
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: bold;
+	padding: 40px 0;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+p {
+	font-family: 'Merriweather', serif;
+	font-size: 14px;
+}
+
+.podpis {
+	font-style: italic;
+	font-size: 20px;
+	opacity: 65%;
+	display: grid;
+	margin: 30px 0;
+}
+
+.podpis::before {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 100px;
+	background-color: white;
+	opacity: 80%;
+	justify-self: center;
+	margin: 20px;
+
+}
+
+img {
+	width: 100%;
+}
+
+header {
+	background-image: url(images/island-hlavicka.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	height: 450px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 30px 0;
+}
+
+ul a {
+	text-decoration: none;
+	color: grey;
+	text-transform: uppercase;
+}
+
+li {
+	border-bottom: 1px solid grey;
+	text-align: center;
+	padding: 10px 0;
+}
+	
+h2::after {
+	content: "";
+	display: block;
+	background-color: #629fe0;
+	height: 4px;
+	width: 100px;
+	margin: 30px 0;
+}
+
+.fotogalerie {
+	color: gray;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.fotogalerie p::first-line {
+	font-weight: 700;
+}
+
+a {
+	color: gray;
+}
