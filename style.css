@@ -20,7 +20,9 @@ body {
 	background-color: #f5f5f5;
 	font-size: 16px;
 	line-height: 1.6;
+	font-family: 'Merriweather', serif;
 }
+
 
 h1,
 h2,
@@ -31,24 +33,43 @@ li {
 h1 {
 	font-size: 60px;
 	font-weight: bold;
-	padding: 40px 0;
+	padding: 60px 0;
+	margin: 0;
 }
 
 h2 {
 	font-size: 30px;
 	font-weight: bold;
+	margin: 50px 0;
+	
 }
 
+h2::after {
+	content: "";
+	display: block;
+	background-color: #629fe0;
+	height: 4px;
+	width: 100px;
+	margin: 17px 0;
+	position: absolute;
+	left: 0;
+}
 
 p {
-	font-family: 'Merriweather', serif;
 	font-size: 14px;
+}
+
+h1,
+h2,
+li,
+p {
+	padding: 0 20px;
 }
 
 .podpis {
 	font-style: italic;
 	font-size: 20px;
-	opacity: 65%;
+	opacity: 80%;
 	display: grid;
 	margin: 30px 0;
 }
@@ -97,15 +118,6 @@ li {
 	padding: 10px 0;
 }
 	
-h2::after {
-	content: "";
-	display: block;
-	background-color: #629fe0;
-	height: 4px;
-	width: 100px;
-	margin: 30px 0;
-}
-
 .fotogalerie {
 	color: gray;
 	text-align: center;
@@ -119,4 +131,17 @@ h2::after {
 
 a {
 	color: gray;
+}
+
+
+@media screen and (min-width: 540px) {
+	ul {
+		display: flex;
+		justify-content: center;
+	}	
+
+	li {
+		margin: 0px 20px;
+		border-bottom: transparent;
+	}
 }
