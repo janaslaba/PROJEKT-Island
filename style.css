@@ -98,6 +98,8 @@ header {
 	color: white;
 	text-align: center;
 	height: 450px;
+	display: grid;
+	align-items: center;
 }
 
 ul {
@@ -117,6 +119,7 @@ li {
 	text-align: center;
 	padding: 10px 0;
 }
+
 	
 .fotogalerie {
 	color: gray;
@@ -134,6 +137,9 @@ a {
 	color: gray;
 }
 
+.paticka {
+	background-image: linear-gradient(lightgray, white);
+}
 
 @media screen and (min-width: 540px) {
 	ul {
@@ -176,11 +182,45 @@ a {
 		transform: scale(1.2);
 	}
 	
+	.picture {
+		position: relative;
+		display: block;
+	}
+
+	.caption {
+		position: absolute;
+		bottom: 5%;
+		right: 0%;
+		color: white;
+		opacity: 80%;
+	}
+	.caption a {
+		color: white;
+		opacity: 85%;
+	}
+
+	.uvod img,
+	.mista img,
+	.proc img {
+		margin: 20px 0;
+	}
 }
 
 @media screen and (min-width: 960px) {
 
-	/*doplnit PC verzi*/
-	/*doplnit styl popisek fotek v pravem dolnim rohu*/
+	.grid {
+		display: grid;
+		max-width: 960px;
+		background-color: white;
+		margin: -40px auto;
+	}
+	
+	.paticka {
+		background-color: #f5f5f5;
+		background-image: none;
+	}
+
+	/*nastylovat pravý a levý sloupec*/
+	/*nastylovat modrou čáru u h2*/
 
 }
